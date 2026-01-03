@@ -179,7 +179,7 @@ export function Hero() {
               <br />
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient">
-                  Instantly & Securely
+                  Settle your claims when it matters most
                 </span>
                 <motion.svg
                   className="absolute -bottom-2 left-0 w-full h-3"
