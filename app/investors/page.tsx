@@ -5,72 +5,95 @@ import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import {
   TrendingUp,
-  DollarSign,
   FileText,
   Shield,
   Bell,
   Mail,
-  Users,
-  Target,
   Briefcase,
   CheckCircle2,
-  ArrowUpRight,
   Calendar,
   Download,
+  Zap,
+  Globe,
+  Award,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export default function InvestorsPage() {
   const keyMetrics = [
-    { label: "Year-over-Year Growth", value: "245%", icon: TrendingUp, color: "from-green-500 to-emerald-600" },
-    { label: "Active Users", value: "500K+", icon: Users, color: "from-blue-500 to-cyan-600" },
-    { label: "Claims Processed", value: "2M+", icon: Target, color: "from-orange-500 to-amber-600" },
-    { label: "Revenue Run Rate", value: "$50M", icon: DollarSign, color: "from-purple-500 to-pink-600" },
+    {
+      label: "Early Traction",
+      value: "Growing",
+      description: "Rapid user adoption post-launch",
+      icon: TrendingUp,
+      color: "from-green-500 to-emerald-600",
+    },
+    {
+      label: "Market Size",
+      value: "$10M",
+      description: "India insurance market by 2027",
+      icon: Globe,
+      color: "from-blue-500 to-cyan-600",
+    },
+    {
+      label: "Time Savings",
+      value: "10 days",
+      description: "Average reduction in claim time",
+      icon: Zap,
+      color: "from-orange-500 to-amber-600",
+    },
+    {
+      label: "Platform Status",
+      value: "Live",
+      description: "Operating across India",
+      icon: Award,
+      color: "from-purple-500 to-pink-600",
+    },
   ]
 
-  const financialHighlights = [
+  const companyMilestones = [
     {
-      quarter: "Dec 2025",
-      revenue: "$4.2M",
-      growth: "+45%",
-      ebitda: "$1.1M",
-      margin: "26.2%",
+      period: "Dec 2025",
+      achievement: "Series A Funding Secured",
+      userGrowth: "Strong month-over-month growth",
+      keyUpdate: "Major insurance partnership announced",
+      status: "completed",
     },
     {
-      quarter: "Nov 2025",
-      revenue: "$2.9M",
-      growth: "+52%",
-      ebitda: "$0.7M",
-      margin: "24.1%",
+      period: "Nov 2025",
+      achievement: "Platform Scale-Up",
+      userGrowth: "Consistent user acquisition momentum",
+      keyUpdate: "Expanded to 15+ insurance providers",
+      status: "completed",
     },
     {
-      quarter: "Oct 2025",
-      revenue: "$1.9M",
-      growth: "Launch",
-      ebitda: "$0.4M",
-      margin: "21.0%",
+      period: "Oct 2025",
+      achievement: "Official Market Launch",
+      userGrowth: "Strong initial adoption",
+      keyUpdate: "Platform goes live nationwide",
+      status: "completed",
     },
   ]
 
   const reports = [
     {
-      title: "Quarterly Report Q4 2025",
-      description: "Comprehensive overview of our financial performance since launch and strategic initiatives",
+      title: "Q4 2025 Investor Update",
+      description: "Strategic progress, platform adoption metrics, and growth initiatives since launch",
       date: "December 30, 2025",
-      type: "Quarterly Report",
+      type: "Quarterly Update",
       size: "2.1 MB",
     },
     {
-      title: "November 2025 Performance Report",
-      description: "Monthly financial results with management discussion and market analysis",
+      title: "Platform Performance Overview",
+      description: "User engagement metrics, operational efficiency, and technology milestones",
       date: "December 5, 2025",
-      type: "Monthly Report",
+      type: "Performance Report",
       size: "1.5 MB",
     },
     {
-      title: "Investor Presentation 2025",
-      description: "Strategic vision, market opportunity, and growth roadmap presentation",
+      title: "Investor Deck 2025",
+      description: "Vision, market opportunity, competitive advantages, and growth strategy",
       date: "November 15, 2025",
       type: "Presentation",
       size: "4.8 MB",
@@ -80,17 +103,17 @@ export default function InvestorsPage() {
   const governance = [
     {
       title: "Board of Directors",
-      description: "Meet our experienced board members who provide strategic oversight and governance",
-      members: ["Rajesh Kumar - Chairman & Independent Director", "Dr. Priya Sharma - Independent Director"],
+      description: "Experienced leaders providing strategic oversight and governance",
+      members: ["Seasoned industry veterans", "Independent board representation", "Strong governance framework"],
     },
     {
       title: "Executive Leadership",
-      description: "Our management team brings decades of experience in insurance, technology, and healthcare",
-      members: ["Amit Patel - CEO & Founder", "Sneha Gupta - CFO", "Vikram Singh - CTO"],
+      description: "Proven track record in insurance, technology, and healthcare sectors",
+      members: ["Deep domain expertise", "Prior exits and scale experience", "Customer-first culture"],
     },
     {
-      title: "Compliance & Ethics",
-      description: "Committed to highest standards of corporate governance and ethical business practices",
+      title: "Compliance & Security",
+      description: "Committed to highest standards of data protection and regulatory compliance",
       members: ["ISO 27001 Certified", "SOC 2 Type II Compliant", "GDPR & Data Privacy Compliant"],
     },
   ]
@@ -98,29 +121,30 @@ export default function InvestorsPage() {
   const announcements = [
     {
       date: "Dec 28, 2025",
-      title: "Claimly Raises $30M Series A Funding",
+      title: "Claimly Closes Successful Series A Funding Round",
       description:
-        "Led by prominent venture capital firms to accelerate product development and market expansion across Asia-Pacific region",
+        "Secured strategic investment from leading venture capital firms to accelerate product development and geographic expansion",
       category: "Funding",
     },
     {
       date: "Dec 15, 2025",
-      title: "Strategic Partnership with Major Insurance Provider",
+      title: "Major Partnership with National Insurance Provider",
       description:
-        "Collaboration with leading insurance company to streamline claims processing for 10 million policyholders",
+        "Strategic collaboration announced with top-tier insurance company to transform claims experience for millions of policyholders",
       category: "Partnership",
     },
     {
       date: "Nov 20, 2025",
-      title: "Claimly Reaches 500K Active Users Milestone",
-      description: "Rapid user adoption with 500K active users within first month of operations, exceeding projections",
+      title: "Platform Adoption Exceeds Early Projections",
+      description:
+        "Rapid user growth and engagement metrics demonstrate strong product-market fit within first 30 days",
       category: "Milestone",
     },
     {
       date: "Oct 20, 2025",
-      title: "Claimly Officially Launches Insurance Claims Platform",
+      title: "Claimly Officially Launches AI-Powered Platform",
       description:
-        "Revolutionary AI-powered platform goes live, offering seamless insurance claims settlement for Indian consumers",
+        "Next-generation insurance claims platform goes live, bringing transparency and speed to Indian insurance market",
       category: "Launch",
     },
   ]
@@ -149,9 +173,9 @@ export default function InvestorsPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
             >
-              Investing in the{" "}
+              Building the Future of{" "}
               <span className="bg-gradient-to-r from-[#F49446] to-[#FF6B35] bg-clip-text text-transparent">
-                Future of Insurance
+                Insurance Claims
               </span>
             </motion.h1>
             <motion.p
@@ -160,8 +184,8 @@ export default function InvestorsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             >
-              Transforming a $6 trillion global insurance industry with AI-powered automation, transparency, and
-              customer-first innovation
+              Revolutionizing a multi-trillion dollar industry through AI-powered automation, transparency, and
+              exceptional user experience
             </motion.p>
           </div>
 
@@ -174,9 +198,9 @@ export default function InvestorsPage() {
             id="overview"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Performance Overview</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Why Claimly</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Delivering exceptional growth and value creation since our October 2025 launch
+                Strong momentum and market validation since our October 2025 launch
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -194,13 +218,14 @@ export default function InvestorsPage() {
                     <metric.icon className="w-7 h-7 text-white" />
                   </div>
                   <div className="text-3xl font-bold text-gray-900 mb-2">{metric.value}</div>
-                  <div className="text-sm text-gray-600">{metric.label}</div>
+                  <div className="text-sm font-semibold text-gray-900 mb-1">{metric.label}</div>
+                  <div className="text-xs text-gray-500">{metric.description}</div>
                 </motion.div>
               ))}
             </div>
           </motion.div>
 
-          {/* Financials Section */}
+          {/* Progress Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -209,51 +234,51 @@ export default function InvestorsPage() {
             id="financials"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Financial Highlights</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Growth Milestones</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Strong financial performance since launch with rapid month-over-month growth
+                Tracking our journey from launch to market leadership
               </p>
             </div>
-            <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-gradient-to-r from-gray-50 to-gray-100">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Period</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Revenue</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">MoM Growth</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">EBITDA</th>
-                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">EBITDA Margin</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100">
-                    {financialHighlights.map((quarter, index) => (
-                      <tr key={index} className="hover:bg-gray-50 transition-colors">
-                        <td className="px-6 py-4 text-sm font-semibold text-gray-900">{quarter.quarter}</td>
-                        <td className="px-6 py-4 text-sm text-gray-900">{quarter.revenue}</td>
-                        <td className="px-6 py-4">
-                          {quarter.growth === "Launch" ? (
-                            <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
-                              {quarter.growth}
-                            </span>
-                          ) : (
-                            <span className="inline-flex items-center gap-1 text-sm font-semibold text-green-600">
-                              <ArrowUpRight className="w-4 h-4" />
-                              {quarter.growth}
-                            </span>
-                          )}
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-900">{quarter.ebitda}</td>
-                        <td className="px-6 py-4 text-sm font-semibold text-gray-900">{quarter.margin}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+            <div className="space-y-6">
+              {companyMilestones.map((milestone, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
+                  className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="flex flex-col md:flex-row md:items-center gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                        <CheckCircle2 className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-4">
+                      <div>
+                        <div className="text-xs text-gray-500 mb-1">Period</div>
+                        <div className="text-sm font-bold text-gray-900">{milestone.period}</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-gray-500 mb-1">Major Achievement</div>
+                        <div className="text-sm font-semibold text-gray-900">{milestone.achievement}</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-gray-500 mb-1">User Growth</div>
+                        <div className="text-sm text-gray-700">{milestone.userGrowth}</div>
+                      </div>
+                      <div>
+                        <div className="text-xs text-gray-500 mb-1">Key Update</div>
+                        <div className="text-sm text-gray-700">{milestone.keyUpdate}</div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
-          {/* Reports Section */}
+          {/* Reports Section
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -262,9 +287,9 @@ export default function InvestorsPage() {
             id="reports"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Reports & Filings</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Investor Resources</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Access our latest financial reports, presentations, and performance updates
+                Access our latest updates, metrics, and strategic presentations
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -305,7 +330,7 @@ export default function InvestorsPage() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Governance Section */}
           <motion.div
@@ -316,9 +341,9 @@ export default function InvestorsPage() {
             id="governance"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Corporate Governance</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Leadership & Governance</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Leadership excellence, transparency, and accountability in everything we do
+                Experienced leadership committed to transparency, compliance, and long-term value creation
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -359,9 +384,9 @@ export default function InvestorsPage() {
             id="announcements"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Latest Announcements</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Company Updates</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Stay informed about our latest developments, partnerships, and milestones
+                Latest news on partnerships, funding, and platform milestones
               </p>
             </div>
             <div className="grid grid-cols-1 gap-6">
@@ -406,10 +431,10 @@ export default function InvestorsPage() {
               <div className="w-16 h-16 rounded-full bg-[#F49446] flex items-center justify-center mx-auto mb-6">
                 <Mail className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Investor Relations Contact</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Connect With Our Team</h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-                Have questions? Our investor relations team is here to help with financial information, reports, and
-                strategic insights.
+                Questions about our growth strategy, market opportunity, or partnership inquiries? Our investor
+                relations team is here to help.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/contact">
