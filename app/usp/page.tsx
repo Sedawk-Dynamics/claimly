@@ -145,15 +145,18 @@ export default function USPPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Patent Pending</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Patent – 202511081810
+                  </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    First-mover protection secured for our innovative insurance claims processing technology
+                    First-mover protection secured for our proprietary insurance claims processing technology, ensuring a strong competitive advantage.
                   </p>
                   <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 text-sm font-semibold text-[#F49446]">
                     <Shield className="w-4 h-4" />
                     Protected Innovation
                   </div>
                 </div>
+
               </div>
             </motion.div>
 
@@ -169,16 +172,19 @@ export default function USPPage() {
                     <Shield className="w-7 h-7 text-white" />
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Trademark Filed</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Brand identity established and legally protected in the insurance technology sector
-                  </p>
-                  <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 text-sm font-semibold text-blue-600">
-                    <Award className="w-4 h-4" />
-                    Registered Brand
-                  </div>
-                </div>
+            <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              Trademark – 7348878/9
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+              Our brand identity is officially registered and legally protected within the insurance technology industry.
+            </p>
+            <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 text-sm font-semibold text-blue-600">
+              <Award className="w-4 h-4" />
+              Registered Brand
+            </div>
+          </div>
+
               </div>
             </motion.div>
           </div>
