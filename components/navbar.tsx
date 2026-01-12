@@ -113,7 +113,7 @@ export function Navbar() {
             {/* Android Download Button */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <a
-                href="https://play.google.com/store"
+                href="https://play.google.com/store/apps/details?id=com.webelio.claimly"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pointer-events-auto"
