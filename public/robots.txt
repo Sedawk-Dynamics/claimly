@@ -1,0 +1,14 @@
+# robots.txt for https://www.claimly.co.in/
+
+User-agent: *
+Allow: /
+
+# Disallow internal/private routes
+
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /admin
+
+# Sitemap
+Sitemap: https://www.claimly.co.in/sitemap.xml

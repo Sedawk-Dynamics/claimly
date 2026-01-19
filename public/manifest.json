@@ -1,0 +1,21 @@
+{
+  "name": "Claimly – Automated Insurance Claims",
+  "short_name": "Claimly",
+  "description": "India’s first automated insurance claims settlement platform. Fast, transparent, and secure.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/claimly-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/claimly-app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
