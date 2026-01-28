@@ -5,7 +5,7 @@ import { Shield, TrendingUp, Clock } from "lucide-react"
 import { useRef, useState } from "react"
 
 const insuranceCompanies = [
-  { name: "HDFC Life", logo: "/hdfc_1.png" },
+  { name: "HDFC Life", logo: "/OIP.webp" },
   { name: "ICICI Prudential", logo: "/icici-prudential-life-insurance-company-logo.png" },
   { name: "LIC", logo: "/lic-insurance-square-logo.jpg" },
   { name: "Tata AIA", logo: "/tata-aia-life-insurance-company-logo.png" },
