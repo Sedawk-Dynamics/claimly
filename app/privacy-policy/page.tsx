@@ -248,6 +248,161 @@ export default function PrivacyPolicyPage() {
               </p>
             </section>
 
+            {/* Payment Processing & Security */}
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-1 w-12 bg-[#F49446] rounded-full"></div>
+                <h2 className="text-3xl font-bold text-foreground">Payment Processing & Security</h2>
+              </div>
+              <div className="space-y-6">
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Payment Methods</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base">
+                    When you make a purchase through the Application (such as premium features or subscription), payments are processed by third-party payment providers like Razorpay or via In-App Purchases (IAP) on platforms such as Google Play and the Apple App Store.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Razorpay Payment Gateway</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base mb-4">
+                    For payments outside app stores (e.g., direct web or API payments processed via Razorpay):
+                  </p>
+                  <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Razorpay Payments Pvt. Ltd. acts as the payment processor.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>We do not store your card or banking information; all payment details are handled securely by Razorpay in compliance with PCI-DSS standards.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Razorpay may collect certain payment data (transaction IDs, payment status) as needed to complete the payment process.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Your transaction data is used only to process and verify your payment.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Razorpay's own privacy policies and terms apply to data processed by them. You can review Razorpay's privacy policy at <a href="https://razorpay.com/privacy" className="text-[#F49446] hover:underline">https://razorpay.com/privacy</a>.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">In-App Purchase (IAP) Payments</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base mb-4">
+                    When you purchase services through an app store (like Google Play or Apple App Store):
+                  </p>
+                  <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>The app store's billing system handles the transaction.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Your payment method and details are processed under the app store's privacy and payment security policies.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>We receive only confirmation of purchase, product type, and billing status necessary to grant access to purchased features.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Refund & Cancellation Policy */}
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-1 w-12 bg-[#F49446] rounded-full"></div>
+                <h2 className="text-3xl font-bold text-foreground">Refund & Cancellation Policy</h2>
+              </div>
+              <div className="space-y-6">
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">General Refund Terms</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base mb-4">
+                    Refunds and cancellations are subject to the following:
+                  </p>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">Payments via Razorpay</h4>
+                      <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#F49446] mt-1">•</span>
+                          <span>Refunds will be processed to the original payment method used for the transaction if approved.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#F49446] mt-1">•</span>
+                          <span>The exact timing of refund crediting depends on your payment method and bank processing times.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#F49446] mt-1">•</span>
+                          <span>In case of duplicate charges, failed transactions that debited despite failure, or payment processing errors, contact our support within 7 days of the transaction for refund consideration.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2">In-App Purchases (IAP)</h4>
+                      <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#F49446] mt-1">•</span>
+                          <span>Refunds for purchases made via Google Play or Apple App Store are governed by the respective platform's refund policies.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#F49446] mt-1">•</span>
+                          <span>To request a refund for an IAP, you must contact Google Play or Apple Support directly through their refund request processes.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">No-Refund Conditions</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base mb-3">
+                    Unless specified otherwise:
+                  </p>
+                  <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Payments completed for services already rendered (e.g., digital content access) may not be eligible for refunds.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>Subscription payments are usually non-refundable after activation of service or content delivery.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Cancellation Requests</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base">
+                    You may request cancellation of upcoming renewals or subscriptions; however, refunds for past billing cycles may not be issued if services were already delivered.
+                  </p>
+                </div>
+
+                <div className="border-l-2 border-muted pl-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Chargebacks</h3>
+                  <p className="text-foreground/90 leading-relaxed text-base mb-3">
+                    If you initiate a chargeback through your bank or payment provider without first contacting support:
+                  </p>
+                  <ul className="space-y-2 text-foreground/90 text-base ml-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>It may delay resolution or impact your access to Claimly services.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#F49446] mt-1">•</span>
+                      <span>We recommend contacting support first to resolve the issue directly.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Contact Us */}
             <section className="space-y-6 pt-8 border-t-2 border-muted">
               <div className="flex items-center gap-3 mb-5">
