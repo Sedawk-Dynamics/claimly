@@ -142,7 +142,7 @@ export function Navbar() {
             {/* iOS Download Button */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="relative">
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/in/app/claimly-manage-your-claims/id6757910346"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pointer-events-auto"
