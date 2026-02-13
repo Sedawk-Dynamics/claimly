@@ -67,25 +67,34 @@ export function MobileAppShowcase() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Mobile App Mockup */}
           {/* Phone mockup */}
-            <div className="relative bg-card border-8 border-foreground rounded-[3rem] shadow-2xl overflow-hidden aspect-[9/19]">
+<motion.div
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="relative"
+>
+  <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
 
-              {/* Notch */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-foreground rounded-b-3xl z-20" />
+    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 blur-2xl rounded-full" />
 
-              {/* Your Real App Screen */}
-              <div className="relative w-full h-full">
+    <div className="relative bg-card border-[6px] border-foreground rounded-[2.5rem] shadow-xl overflow-hidden aspect-[9/19]">
 
-                <Image
-                  src="/Phonescreen.jpeg"
-                  alt="Claimly App UI"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-foreground rounded-b-2xl z-20" />
 
-              </div>
+      <Image
+        src="/Phonescreen.jpeg"
+        alt="Claimly App UI"
+        fill
+        className="object-cover"
+        priority
+      />
 
-            </div>
+    </div>
+
+  </div>
+</motion.div>
+
 
 
             {/* Features & Download Buttons */}
