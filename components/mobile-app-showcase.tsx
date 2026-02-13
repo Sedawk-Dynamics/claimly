@@ -1,5 +1,7 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
+
 
 
 import { motion } from "framer-motion"
@@ -64,81 +66,27 @@ export function MobileAppShowcase() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Mobile App Mockup */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <div className="relative mx-auto max-w-sm">
-                {/* Gradient background effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 blur-3xl rounded-full" />
+          {/* Phone mockup */}
+            <div className="relative bg-card border-8 border-foreground rounded-[3rem] shadow-2xl overflow-hidden aspect-[9/19]">
 
-                {/* Phone mockup */}
-                <div className="relative bg-card border-8 border-foreground rounded-[3rem] shadow-2xl overflow-hidden aspect-[9/19]">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-foreground rounded-b-3xl" />
-                  <div className="p-6 pt-10 h-full bg-gradient-to-br from-primary/5 to-accent/5">
-                    <div className="flex flex-col h-full">
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-primary rounded-2xl mx-auto mb-3 flex items-center justify-center">
-                          <Shield className="w-8 h-8 text-primary-foreground" />
-                        </div>
-                        <h3 className="font-bold text-xl">Claimly</h3>
-                        <p className="text-xs text-muted-foreground">Automated Claims</p>
-                      </div>
+              {/* Notch */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-foreground rounded-b-3xl z-20" />
 
-                      <div className="space-y-3 flex-1">
-                        <div className="bg-background rounded-xl p-4 shadow-sm">
-                          <div className="flex items-center gap-3 mb-2">
-                            <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                              <FileCheck className="w-5 h-5 text-primary" />
-                            </div>
-                            <div className="flex-1">
-                              <div className="h-3 bg-muted rounded w-24 mb-1" />
-                              <div className="h-2 bg-muted rounded w-16" />
-                            </div>
-                          </div>
-                          <div className="h-2 bg-primary/20 rounded-full overflow-hidden">
-                            <div className="h-full bg-primary rounded-full w-3/4" />
-                          </div>
-                        </div>
+              {/* Your Real App Screen */}
+              <div className="relative w-full h-full">
 
-                        <div className="bg-background rounded-xl p-4 shadow-sm">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center">
-                              <Zap className="w-5 h-5 text-accent" />
-                            </div>
-                            <div className="flex-1">
-                              <div className="h-3 bg-muted rounded w-32 mb-1" />
-                              <div className="h-2 bg-muted rounded w-20" />
-                            </div>
-                          </div>
-                        </div>
+                <Image
+                  src="/Phonescreen.jpeg"
+                  alt="Claimly App UI"
+                  fill
+                  className="object-cover"
+                  priority
+                />
 
-                        <div className="bg-background rounded-xl p-4 shadow-sm opacity-60">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center">
-                              <Bell className="w-5 h-5 text-secondary" />
-                            </div>
-                            <div className="flex-1">
-                              <div className="h-3 bg-muted rounded w-28 mb-1" />
-                              <div className="h-2 bg-muted rounded w-24" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-3 gap-2 mt-4">
-                        <div className="h-12 bg-primary/10 rounded-lg" />
-                        <div className="h-12 bg-accent/10 rounded-lg" />
-                        <div className="h-12 bg-secondary/10 rounded-lg" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </motion.div>
+
+            </div>
+
 
             {/* Features & Download Buttons */}
             <motion.div
